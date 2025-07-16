@@ -1,0 +1,104 @@
+# --- General ---
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# --- Python ---
+# Byte-compiled / optimized / C extensions
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# --- Anaconda ---
+# Anaconda environment configuration
+.ipynb_checkpoints
+/conda-meta/
+/conda-bld/
+
+# Anaconda virtual environments
+# (보통 프로젝트 외부에 있지만, 만약 내부에 생성했다면)
+/envs/
+/pkgs/
+
+# --- IDEs and editors ---
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# --- Project Specific ---
+# Environment variables file (VERY IMPORTANT)
+.env
+.env.*
+!.env.example  # .env.example 파일은 예시용으로 포함시키는 것이 좋음
+
+# Local databases
+# Airflow의 기본 SQLite DB
+airflow.db
+# 로컬 테스트용 DB 파일이 있다면 추가
+# *.db
+# *.sqlite3
+
+# Docker-related local data (logs and data should not be committed)
+/logs/
+/plugins/
+/neo4j_data/
+/postgres_data/
+/airflow-init-done/
+
+# Evaluation results (these are generated artifacts)
+/evaluation_results/
+*.csv
+*.png
+
+# Temporary files from file processing
+/tmp/
+*.tmp
+
+# Jupyter Notebook
+*.ipynb

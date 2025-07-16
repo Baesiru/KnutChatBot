@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>챗봇 테스트 페이지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>국립한국교통대학교 챗봇 테스트</h1>
+
+        <div class="main-content">
+            <!-- 챗봇 섹션 -->
+            <div class="chat-container">
+                <h2>실시간 챗봇</h2>
+                <div id="chat-window" class="chat-window">
+                    <!-- 채팅 메시지가 여기에 표시됩니다 -->
+                </div>
+                <form id="chat-form">
+                    <input type="text" id="message-input" placeholder="질문을 입력하세요..." autocomplete="off" required>
+                    <button type="submit">전송</button>
+                </form>
+            </div>
+
+            <!-- 평가 섹션 -->
+            <div class="evaluation-container">
+                <h2>시스템 평가 (Ragas)</h2>
+                <button id="start-evaluation-btn">RAG 시스템 평가 시작</button>
+                <div id="evaluation-status">평가 상태: 대기 중</div>
+                <div class="results-box">
+                    <h3>평가 결과:</h3>
+                    <pre id="evaluation-results">결과가 여기에 표시됩니다.</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
